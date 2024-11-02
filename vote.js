@@ -14,7 +14,8 @@ function register(event) {
 
     // Check if age is eligible for voting
     if (age >= 18) {
-        // Store user information in the console for demonstration
+        // Store user information in localStorage
+        localStorage.setItem("registered", "true");
         console.log("Registration Successful!");
         console.log("Name: " + name);
         console.log("Email: " + email);
